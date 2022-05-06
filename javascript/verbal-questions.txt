@@ -1,0 +1,23 @@
+// Map vs FlatMap
+
+// map vs forEach
+------------
+  forEach => modifies the origin array
+        map => doesn't change the original array and can chain more methods like filter
+
+
+// null vs undefined
+---------
+    null => is an actual value
+    undefined => variable is defined, but value is not set 
+    null == undefined => true
+    null === undefined => false
+    
+
+// synthetic events
+-------------------
+    In React, there is a wrapper around default browser event called "Synthetic Event"
+    React 16 automatically attaches event listeners to document node
+    React 17 automatically attaches event listeners to root node element
+
+    React follow "Event Bubbling" and execute event handler during bubbling phase
