@@ -12,10 +12,10 @@ const num = 11;
 const towSum = (arr, num) => {
   const numObj = {};
 
-  for (let i = 0; i < arr.length; i++) {
+  for (let i = 0; i <= arr.length; i++) {
     let numberToFind = num - arr[i];
 
-    // after substracting current number of the array from the given number
+    // after subtracting current number of the array from the given number
     // if that remaining number has in the map, that is the second number to sum the input number
     if (numObj[arr[i]] >= 0) {
       return [numObj[arr[i]], i];
